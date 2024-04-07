@@ -1,0 +1,7 @@
+body > center > table > tbody > tr:nth-child(3) > td > table {
+    visibility: hidden;
+}
+
+.disable-focusmode > center > table > tbody > tr:nth-child(3) > td > table {
+    visibility: visible;
+}

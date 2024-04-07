@@ -1,0 +1,7 @@
+[role=main], [aria-hidden=false] {
+    visibility: hidden;
+}
+
+.disable-focusmode [role=main], [aria-hidden=false] {
+    visibility: visible;
+}

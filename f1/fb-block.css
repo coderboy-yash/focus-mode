@@ -1,0 +1,56 @@
+/* Old facebook design */
+[id^=topnews_main_stream_], #fb_stories_card_root {
+    visibility: hidden;
+}
+
+/* Hide stories */
+[data-pagelet=Stories] {
+    visibility: hidden;
+}
+.disable-focusmode [data-pagelet=Stories] {
+    visibility: visible;
+}
+[aria-label=Stories] {
+    visibility: hidden;
+}
+.disable-focusmode [aria-label=Stories] {
+    visibility: visible;
+}
+
+/*
+If I hide the feed completely, it seems to just generate the feed outside
+of this element for some reason...
+
+Sooo let's make it really tiny instead.
+*/
+[role=feed] {
+    transform: scale(0.001);
+}
+
+.disable-focusmode [role=feed] {
+    transform: none;
+}
+
+#ssrb_feed_start + div {
+    transform: scale(0.001);
+}
+
+.disable-focusmode #ssrb_feed_start + div {
+    transform: none;
+}
+
+#ssrb_rhc_start + div {
+    transform: scale(0.001);
+}
+
+.disable-focusmode #ssrb_rhc_start + div {
+    transform: none;
+}
+
+[role=main] {
+    transform: scale(0.001);
+}
+
+.disable-focusmode [role=main] {
+    transform: none;
+}

@@ -1,0 +1,7 @@
+main, .news-module {
+    visibility: hidden;
+  }
+  
+  .disable-focusmode main, .disable-focusmode .news-module {
+    visibility: visible;
+  }

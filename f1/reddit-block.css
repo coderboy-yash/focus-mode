@@ -1,0 +1,7 @@
+[role=main], [aria-hidden=false], shreddit-app {
+    visibility: hidden;
+}
+
+.disable-focusmode [role=main], .disable-focusmode [aria-hidden=false], .disable-focusmode shreddit-app {
+    visibility: visible;
+}
